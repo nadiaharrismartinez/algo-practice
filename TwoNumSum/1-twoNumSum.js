@@ -1,14 +1,13 @@
+// BRUTE FORCE SOLUTION
+
 /*
-Edge:
+EDGE CASES:
 - If no pair found -> Return []
 - No more than one pair
 - Can't reuse any integers
 - Negative numbers
 
-Approach:
-
--- Non log(n) Approach --
-
+APPROACH:
 let result = []
 let sum = 0
 
@@ -20,9 +19,6 @@ nested for loop
   if (sum === targetSum)
     result = [arr[i], arr[j]]
 return result
-
--- log(N) Approach --
-
 
 */
 

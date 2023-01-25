@@ -1,5 +1,7 @@
+// OPTIMIZED SPACE & TIME COMPLEXITY SOLUTION
+
 /*
-Approach:
+APPROACH:
 - hash table {}
 - x + y = targetSum (x = currNum)
 - If y is in hashtable, then return [x, y]
