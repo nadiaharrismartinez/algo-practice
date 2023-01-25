@@ -1,32 +1,15 @@
+// BRUTE FORCE SOLUTION
+
 /*
-Edge:
+EDGE CASES:
 - Not sorted
 - Second arr can be just 1 num
 - No empty arrays
 - Repeated numbers
 
+APPROACH:
+O(n^2)
 
-
-
-O(log(n)) / O(n) Approach:
-
-- sort array 
-  
-  - If yes
-    - Find idx of seq[i - 1]
-      - if(prevIdx < currIdx)
-        - Yes
-          - keep going
-        - No
-          - return false
-  - if no
-    - return false
-    
-  - return true
-
-
-
-O(n^2) Approach:
 - Obj = {
     num: idx
     1: 1,

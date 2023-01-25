@@ -1,12 +1,32 @@
+// OPTIMIZED SPACE & TIME COMPLEXITY SOLUTION
+
 /*
-Edge:
+EDGE CASES:
 - Not sorted
 - Second arr can be just 1 num
 - No empty arrays
 - Repeated numbers
 
 
-O(log(n)) / O(n) Approach:
+APPROACH:
+O(log(n)) / O(n) 
+
+- sort array 
+  
+  - If yes
+    - Find idx of seq[i - 1]
+      - if(prevIdx < currIdx)
+        - Yes
+          - keep going
+        - No
+          - return false
+  - if no
+    - return false
+    
+  - return true
+
+
+ANOTHER APPROACH:
 
 function
   arrIdx = 0
