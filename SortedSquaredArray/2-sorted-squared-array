@@ -1,0 +1,26 @@
+// OPTIMIZED SPACE & TIME COMPLEXITY SOLUTION
+
+function sortedSquaredArray(arr) {
+  let newArr = new Array(arr.length);
+  let headIdx = 0;
+  let tailIdx = arr.length - 1;
+
+  for (let i = 0; i < arr.length; i++) {
+    let head = Math.abs(arr[headIdx]);
+    let tail = Math.abs(arr[tailIdx]);
+    let sqHead = head * head;
+    let sqTail = tail * tail;
+
+    if (head > tail) {
+      newArr[tailIdx] = sqHead;
+      headIdx++;
+    } else {
+      newArr[tailIdx] = sqTail;
+      tailIdx--;
+    }
+  }
+  return newArr;
+}
+
+// Do not edit the line below.
+exports.sortedSquaredArray = sortedSquaredArray;

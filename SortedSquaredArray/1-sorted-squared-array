@@ -1,0 +1,39 @@
+// BRUTE FORCE SOLUTION
+
+/*
+EDGE:
+- Negative integers
+- One integer
+- Repeat nums
+
+
+APPROACH:
+- O(n) | O(n) 
+
+function
+  for loop
+    i * i
+    
+  if num is positive
+    newArr.push
+    
+  if num is negative
+    
+  return the new arr
+
+*/
+
+function sortedSquaredArray(arr) {
+  let newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let newNum = arr[i] * arr[i];
+    newArr.push(newNum);
+  }
+
+  let result = newArr.sort((a, b) => a - b);
+  return result;
+}
+
+// Do not edit the line below.
+exports.sortedSquaredArray = sortedSquaredArray;
