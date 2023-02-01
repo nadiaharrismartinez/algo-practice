@@ -1,3 +1,5 @@
+// OPTIMIZED APPROACH
+
 /*
 EDGE CASES:
 - Not to worry about x and y coordinates
@@ -51,8 +53,8 @@ function calcDroneMinEnergy(route) {
     }
 
     if (kWh < 0) {
-      let extra = 0 - kWh; // 0 - (-5)
-      kWh += extra; // -5 + 5
+      let extra = 0 - kWh;
+      kWh += extra;
       result += extra;
     }
   }
