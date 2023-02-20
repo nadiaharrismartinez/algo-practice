@@ -19,14 +19,16 @@ return sum
 
 */
 
-// BRUTE FORCE SOLUTION
+// ITERATIVE SOLUTION
 const sumFunc = (n) => {
   let sum = 0;
 
+  if (!n) {
+    return null;
+  }
+
   for (let i = 0; i <= n; i++) {
-    if (i <= n) {
-      sum += i;
-    }
+    sum += i;
   }
   return sum;
 };
@@ -34,13 +36,12 @@ const sumFunc = (n) => {
 console.log(sumFunc(10));
 
 // RECURSIVE SOLUTION
-const sumFunc3 = (n) => {
+const sumFunc2 = (n) => {
   if (n === 0) {
     return 0;
   } else {
-    return n + sumFunc3(n - 1);
+    return n + sumFunc2(n - 1);
   }
 };
 
 console.log(sumFunc2(10));
-console.log(sumFunc3(10));
