@@ -52,6 +52,7 @@ function calcDroneMinEnergy(route) {
       continue;
     }
 
+    // Add in extra
     if (kWh < 0) {
       let extra = 0 - kWh;
       kWh += extra;
